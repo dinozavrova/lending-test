@@ -1,0 +1,201 @@
+:root {
+  --color-background: #ffffff;
+  --color-dark: #272a33;
+  --color-border: #e0e6ed;
+  --font-primary: "Open Sans", sans-serif;
+  --font-heading: "Roboto", sans-serif;
+  --container-width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-dark);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: var(--color-background);
+  padding: 20px 0;
+  position: sticky;
+  top: 0px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  list-style: none;
+}
+
+.header__list-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: var(--color-dark);
+}
+
+.product {
+  margin: 0 auto;
+  margin-block: 80px;
+}
+
+.product__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 36px;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 135%;
+}
+
+.product__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 31px 30px;
+}
+
+.card__img {
+  width: 190px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.card__title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 120%;
+  color: var(--color-dark);
+}
+
+.card__check {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.card__check-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.card__stock {
+  color: var(--color-dark);
+  font-size: 16px;
+  line-height: 145%;
+}
+
+.card__button {
+  font-family: inherit;
+  font-size: 16px;
+  background-color: black;
+  color: #ffffff;
+  padding: 8px 30px 12px;
+  width: 159px;
+  height: 46px;
+  border-radius: 8px;
+}
+
+.product__bnt {
+  display: flex;
+  justify-content: center;
+}
+
+.product__button {
+  margin-top: 30px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: black;
+  color: #ffffff;
+  padding: 8px 30px 12px;
+  width: 223px;
+  height: 46px;
+  border-radius: 8px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-block: 50px;
+}
+
+.about_text {
+  text-align: leftта;
+}
+
+.text__title {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+.text__list {
+  list-style: none;
+  padding-left: 0;
+  margin-block: 20px;
+}
+
+.text__list-item {
+  padding-left: 30px;
+  background-image: url("../img/icon/red_mark.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px 16px;
+  margin-bottom: 10px;
+}
+
+.about__button {
+  margin-top: 30px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: black;
+  color: #ffffff;
+  padding: 8px 30px 12px;
+  width: 159px;
+  height: 46px;
+  border-radius: 8px;
+}
