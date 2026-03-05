@@ -3,34 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>SPARTSPRO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Шрифты ДО стилей — чтобы CSS мог ими пользоваться -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <img src="img/logo/headerLogo.svg" alt="logo" />
+          <a href="/" class="header__logo">
+            <img
+              src="img/logo/headerLogo.svg"
+              alt="SPARTSPRO"
+              width="150"
+              height="40"
+            />
+          </a>
+
+          <!-- Бургер для мобильных -->
+          <button
+            class="header__burger"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+
           <ul class="header__list">
             <li class="header__list-item">
               <a class="header__list-link active" href="/">Главная</a>
             </li>
-            <li>
+            <li class="header__list-item">
               <a class="header__list-link" href="/">Каталог</a>
             </li>
-            <li>
+            <li class="header__list-item">
               <a class="header__list-link" href="/">О Компании</a>
             </li>
-            <li>
+            <li class="header__list-item">
               <a class="header__list-link" href="/">Оплата и доставка</a>
             </li>
-            <li>
+            <li class="header__list-item">
               <a class="header__list-link" href="/">Контакты</a>
             </li>
           </ul>
@@ -44,12 +65,14 @@
           <div class="product__content">
             <h1 class="title">Рекомендуемое оборудование</h1>
             <div class="product__cards">
-              <!--первая-->
               <article class="card">
                 <img
                   class="card__img"
                   src="img/product/9X21F(9Х17).png"
-                  alt="Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570"
+                  alt="Стальной канат GRS 9X21F(9Х17)-IWRC 1570"
+                  width="190"
+                  height="190"
+                  loading="lazy"
                 />
                 <div class="card__content">
                   <h3 class="card__title">
@@ -59,21 +82,28 @@
                     <img
                       class="card__check-icon"
                       src="img/icon/green_mark.png"
-                      alt="green check mark"
+                      alt=""
+                      width="14"
+                      height="14"
                     />
-                    <p class="card__stock">В наличии 50 м.</p>
+                    <p class="card__stock card__stock--available">
+                      В наличии 50 м.
+                    </p>
                   </div>
-                  <button class="card__button">Подробнее</button>
+                  <button class="btn btn--primary" type="button">
+                    Подробнее
+                  </button>
                 </div>
               </article>
-              <!--вторая-->
+
               <article class="card">
                 <img
                   class="card__img"
                   src="img/product/AAA717X1.png"
-                  alt="Плоский тяговый ремень для лифта 
-                        GRS AAA717X1 (12 кордов)
-                        "
+                  alt="Плоский тяговый ремень GRS AAA717X1"
+                  width="190"
+                  height="190"
+                  loading="lazy"
                 />
                 <div class="card__content">
                   <h3 class="card__title">
@@ -83,19 +113,26 @@
                     <img
                       class="card__check-icon"
                       src="img/icon/red_mark.png"
-                      alt="red check mark"
+                      alt=""
+                      width="14"
+                      height="14"
                     />
-                    <p class="card__stock">Под заказ</p>
+                    <p class="card__stock card__stock--order">Под заказ</p>
                   </div>
-                  <button class="card__button">Подробнее</button>
+                  <button class="btn btn--primary" type="button">
+                    Подробнее
+                  </button>
                 </div>
               </article>
-              <!--третья-->
+
               <article class="card">
                 <img
                   class="card__img"
                   src="img/product/8X19S-NFC.png"
-                  alt="Стальной канат для лифта GRS 8X19S-NFC 1570"
+                  alt="Стальной канат GRS 8X19S-NFC 1570"
+                  width="190"
+                  height="190"
+                  loading="lazy"
                 />
                 <div class="card__content">
                   <h3 class="card__title">
@@ -105,19 +142,28 @@
                     <img
                       class="card__check-icon"
                       src="img/icon/green_mark.png"
-                      alt="green check mark"
+                      alt=""
+                      width="14"
+                      height="14"
                     />
-                    <p class="card__stock">В наличии 50 м.</p>
+                    <p class="card__stock card__stock--available">
+                      В наличии 50 м.
+                    </p>
                   </div>
-                  <button class="card__button">Подробнее</button>
+                  <button class="btn btn--primary" type="button">
+                    Подробнее
+                  </button>
                 </div>
               </article>
-              <!--четвертая-->
+
               <article class="card">
                 <img
                   class="card__img"
                   src="img/product/8X19W-CWC.png"
-                  alt="Стальной канат для лифта GRS 8X19W-CWC 1570"
+                  alt="Стальной канат GRS 8X19W-CWC 1570"
+                  width="190"
+                  height="190"
+                  loading="lazy"
                 />
                 <div class="card__content">
                   <h3 class="card__title">
@@ -127,19 +173,28 @@
                     <img
                       class="card__check-icon"
                       src="img/icon/green_mark.png"
-                      alt="green check mark"
+                      alt=""
+                      width="14"
+                      height="14"
                     />
-                    <p class="card__stock">В наличии 50 м.</p>
+                    <p class="card__stock card__stock--available">
+                      В наличии 50 м.
+                    </p>
                   </div>
-                  <button class="card__button">Подробнее</button>
+                  <button class="btn btn--primary" type="button">
+                    Подробнее
+                  </button>
                 </div>
               </article>
-              <!--пятая-->
+
               <article class="card">
                 <img
                   class="card__img"
                   src="img/product/9X21F(9Х17).png"
-                  alt="Стальной канат для лифта GRS 9X21F(9Х17)-IWRC 1570"
+                  alt="Стальной канат GRS 9X21F(9Х17)-IWRC 1570"
+                  width="190"
+                  height="190"
+                  loading="lazy"
                 />
                 <div class="card__content">
                   <h3 class="card__title">
@@ -149,78 +204,102 @@
                     <img
                       class="card__check-icon"
                       src="img/icon/green_mark.png"
-                      alt="green check mark"
+                      alt=""
+                      width="14"
+                      height="14"
                     />
-                    <p class="card__stock">В наличии 50 м.</p>
+                    <p class="card__stock card__stock--available">
+                      В наличии 50 м.
+                    </p>
                   </div>
-                  <button class="card__button">Подробнее</button>
+                  <button class="btn btn--primary" type="button">
+                    Подробнее
+                  </button>
                 </div>
               </article>
-              <!--шестая-->
+
               <article class="card">
                 <img
                   class="card__img"
                   src="img/product/AAA717AJ1.png"
-                  alt="Купить плоский тяговый ремень для лифта GRS AAA717AJ1(8 кордов)"
+                  alt="Плоский тяговый ремень GRS AAA717AJ1"
+                  width="190"
+                  height="190"
+                  loading="lazy"
                 />
                 <div class="card__content">
                   <h3 class="card__title">
-                    Купить плоский тяговый ремень для лифта GRS AAA717AJ1(8
-                    кордов)
+                    Плоский тяговый ремень для лифта GRS AAA717AJ1 (8 кордов)
                   </h3>
                   <div class="card__check">
                     <img
                       class="card__check-icon"
                       src="img/icon/green_mark.png"
-                      alt="green check mark"
+                      alt=""
+                      width="14"
+                      height="14"
                     />
-                    <p class="card__stock">В наличии 50 м.</p>
+                    <p class="card__stock card__stock--available">
+                      В наличии 50 м.
+                    </p>
                   </div>
-                  <button class="card__button">Подробнее</button>
+                  <button class="btn btn--primary" type="button">
+                    Подробнее
+                  </button>
                 </div>
               </article>
             </div>
           </div>
-          <div class="product__bnt">
-            <button class="product__button">Перейти в каталог</button>
+
+          <div class="product__btn">
+            <button class="btn btn--primary btn--wide" type="button">
+              Перейти в каталог
+            </button>
           </div>
         </div>
       </section>
 
       <section class="about">
         <div class="container">
-          <h1 class="title">О компании</h1>
+          <h2 class="title">О компании</h2>
           <div class="about__content">
-            <img src="img/about/aboutImg.png" alt="factory img" />
-            <div class="about_text">
-              <p class="text__title">
-                Компания «SPARTSPRO» специализируется на поставках лифтового
+            <img
+              class="about__img"
+              src="img/about/aboutImg.png"
+              alt="Производственные мощности SPARTSPRO"
+              width="600"
+              height="400"
+              loading="lazy"
+            />
+            <div class="about__text">
+              <p class="about__lead">
+                Компания «SPARTSPRO» специализируется на поставках лифтового
                 оборудования, комплектующих и запчастей для лифтов и эскалаторов
                 ведущих мировых и российских производителей.
               </p>
 
-              <ul class="text__list">
-                <li class="text__list-item">
-                  Гарантия качества – работаем только с проверенными
+              <ul class="about__list">
+                <li class="about__list-item">
+                  Гарантия качества – работаем только с проверенными
                   производителями.
                 </li>
-                <li class="text__list-item">
-                  Собственный склад – более 30 000 наименований в наличии для
+                <li class="about__list-item">
+                  Собственный склад – более 30 000 наименований в наличии для
                   оперативных отгрузок.
                 </li>
-                <li class="text__list-item">
-                  Соблюдение сроков – приоритет компании: быстрая обработка
+                <li class="about__list-item">
+                  Соблюдение сроков – приоритет компании: быстрая обработка
                   заказов и доставка без задержек.
                 </li>
               </ul>
 
-              <p class="text__article">
+              <p class="about__article">
                 Мы обеспечиваем бесперебойные поставки для ваших проектов.
                 Оставьте заявку – и получите коммерческое предложение в
                 кратчайшие сроки!
               </p>
 
-              <button class="about__button">Подробнее</button>
+              <button class="btn btn--primary" type="button">Подробнее</button>
             </div>
           </div>
         </div>
