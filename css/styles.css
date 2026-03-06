@@ -3,7 +3,7 @@
   --color-dark: #272a33;
   --color-border: #e0e6ed;
   --color-btn: #000000;
-  --color-btn-hover: #333333;
+  --color-btn-hover: #ee753e;
   --font-primary: "Open Sans", sans-serif;
   --font-heading: "Roboto", sans-serif;
   --container-width: 1440px;
@@ -41,43 +41,39 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: inherit;
+  font-family: var(--font-primary);
   font-size: 16px;
-  line-height: 1;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition:
-    background-color 0.2s ease,
-    transform 0.1s ease;
-}
-
-.btn:active {
-  transform: scale(0.97);
-}
-
-.btn--primary {
   background-color: var(--color-btn);
   color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.btn--primary:hover {
+.btn:hover {
   background-color: var(--color-btn-hover);
+  transition: 0.25s;
 }
 
-.btn--primary:focus-visible {
-  outline: 2px solid #4a90d9;
-  outline-offset: 2px;
+.btn-card {
+  width: 150px;
+  align-self: flex-start;
 }
 
-.btn--wide {
-  min-width: 223px;
+.btn-catalog {
+  display: flex;
+}
+
+.btn-about {
+  align-self: center;
+  margin-top: 20px;
 }
 
 .title {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: bold;
   font-size: 36px;
   text-transform: uppercase;
   line-height: 1.35;
@@ -86,10 +82,6 @@ body {
 .header {
   background-color: var(--color-background);
   padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .header__logo {
@@ -115,16 +107,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-dark);
-  transition: opacity 0.2s ease;
   white-space: nowrap;
-}
-
-.header__list-link:hover {
-  opacity: 0.7;
-}
-
-.header__list-link.active {
-  font-weight: 600;
 }
 
 .header__burger {
@@ -152,7 +135,8 @@ body {
 }
 
 .product {
-  padding-block: 80px;
+  padding-top: 80px;
+  padding-bottom: 0;
 }
 
 .product__content {
@@ -171,18 +155,12 @@ body {
   border: 1px solid var(--color-border);
   border-radius: 8px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   overflow: hidden;
-  transition: box-shadow 0.2s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .card__img {
   width: 190px;
-  height: auto;
   flex-shrink: 0;
   object-fit: cover;
 }
@@ -229,7 +207,8 @@ body {
 }
 
 .about {
-  padding-block: 50px;
+  padding-top: 0;
+  padding-bottom: 50px;
 }
 
 .about__content {
